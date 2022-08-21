@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9ECEF"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="183dp"
+        android:layout_height="129dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="115dp"
+        app:srcCompat="@drawable/_1111" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="147dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="31dp"
+        android:backgroundTint="#6C757D"
+        android:text="Back" />
+
+    <TextView
+        android:id="@+id/txtVuYourCv"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_above="@+id/txtVuName"
+        android:layout_below="@+id/img"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="134dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="Your CV"
+        android:textColor="#212529"
+        android:textSize="33sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/nameView"
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="35dp"
+        android:layout_toEndOf="@+id/txtVuName"
+        android:textColor="#343A40"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtVuName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtVuAge"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="35dp"
+        android:text="Name :"
+        android:textColor="#BA181B"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ageView"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/jobview"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="35dp"
+        android:layout_toEndOf="@+id/txtVuAge"
+        android:textColor="#343A40"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtVuAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtVuYourJob"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="35dp"
+        android:text="Age :"
+        android:textColor="#BA181B"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtVuYourJob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtVuPhoneNumber"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="35dp"
+        android:text="Your Job :"
+        android:textColor="#BA181B"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/jobview"
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/phoneView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="35dp"
+        android:layout_toEndOf="@+id/txtVuYourJob"
+        android:textColor="#343A40"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/phoneView"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emailView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="35dp"
+        android:layout_toEndOf="@+id/txtVuPhoneNumber"
+        android:textColor="#343A40"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtVuPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtVuEmail"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="35dp"
+        android:text="Phone number :"
+        android:textColor="#BA181B"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/emailView"
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnBack"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="42dp"
+        android:layout_toEndOf="@+id/txtVuEmail"
+        android:textColor="#343A40"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/txtVuEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnBack"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="42dp"
+        android:text="email :"
+        android:textColor="#BA181B"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+</RelativeLayout>
